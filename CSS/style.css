@@ -1,0 +1,998 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'YDWaosagi';
+    src: url('../YDW_aosagi/YDWaosagi.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html[lang="ja"] {
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  }
+
+
+
+html{
+    font-size:100%;/*ユーザー設定の文字サイズを正しく反映*/
+}
+*{
+    box-sizing:border-box;
+}
+img{
+    max-width:100%;/*画像が親要素からはみ出すのを防ぐ*/
+    height:auto;
+}
+body{
+    background-color:#F3E9DC;
+    margin:0;
+    padding:0;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+      
+}
+
+.header_contents{
+    width:100%;
+    display:grid;
+    justify-content:space-between; /*メニューを右端に置く方法その１（※）*/
+    margin: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    height: 140px;
+
+
+}
+.logo img{
+    height: 80px;
+    margin-bottom: 60px;
+}
+
+.header_nav li {
+    display: list-item;  /* 縦に並べる */
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-family: 'YDWaosagi';
+  }
+
+  .header_nav a {
+    line-height: 2;
+  }
+
+
+  .sns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  
+  }
+
+  .sns_text{
+    font-size: 14px;
+    font-family: 'YDWaosagi';
+    padding: 10% 0 0 0;
+
+  }
+
+ .sns_item{
+    width: 40px;
+ }
+
+ .top_img{
+    width: 370px;
+ }
+
+.copy{
+    margin: 67px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 67px;
+    height: 200px;
+
+}
+
+ .copy_text{
+    writing-mode: vertical-rl;
+    font-size: 25px;
+    font-family: 'YDWaosagi';
+    line-height: 100px;
+ }
+ .copy_text2{
+    writing-mode: vertical-rl;
+    font-size: 25px;
+    font-family: 'YDWaosagi';
+    margin-top: -120px;
+ }
+
+ .copy p{
+    font-size: 12px;
+    font-family: YDWaosagi;
+    margin-top: 120px;
+
+
+ }
+
+
+
+ .main_text{
+    margin: -500px 0 0 20px;
+  }
+  .main_text .text-anime{
+    display: flex;
+    overflow: hidden;
+    font-size: 60px;
+    font-family: 'YDWaosagi';
+    color: #fff;
+    line-height: 100px;
+    letter-spacing: 1px;
+  }
+  .text-anime span {
+    display: block;
+    transform: translate(0, 105%);
+    transition: transform ease-in-out 1s;
+  }
+  
+  .text-anime span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  .text-anime span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  .text-anime span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  .text-anime span:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+  .text-anime span:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+  .text-anime span:nth-child(7) {
+    transition-delay: 0.6s;
+  }
+  .text-anime.-visible span {
+    transform: translate(0, 0);
+  }
+  
+.main_text2{
+    font-size: 21px;
+    font-family: 'YDWaosagi';
+    color: #fff;
+    line-height: 40px;
+    margin: 100px 0 0 20px;
+}
+
+
+.main_contents{
+    background-color: #fff;
+    max-width: 370px;
+}
+
+.message_contents{
+    text-align: left;
+    padding: 50px 70px;
+
+}
+
+.message_contents p{
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.more{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+
+.message img{
+    width: 35px;
+    object-fit: cover;
+    
+}
+
+.service{
+    margin-top: -150px;
+}
+
+.service_contents{
+    text-align: left;
+    padding: 0 30px;
+
+}
+
+.service_title {
+    writing-mode: vertical-rl;
+    font-size: 100px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
+    padding-left: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    height: 180px;
+}
+
+.service_num{
+    font-size: 24px;
+    font-family: 'YDWaosagi';
+padding-bottom: 50px;
+}
+
+.service_tit{
+    font-size: 24px;
+padding-bottom: 40px;
+}
+
+.service_text{
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 40px;
+
+
+}
+
+
+.service_contents img{
+margin-bottom: 120px;
+}
+
+.footer{
+    text-align: left;
+    padding: 0 30px;
+
+}
+
+.footer_title{
+    font-size: 24px;
+    font-family: 'YDWaosagi';
+    padding: 60px 0;
+
+}
+
+.footer_text{
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 40px;
+
+}
+
+
+.c-form {
+	margin: 0 auto;
+}
+.c-form__item {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+.c-form__label{
+    padding: 10px 0;
+}
+.c-form__input {
+	padding: 10px;
+}
+.c-form__label {
+	width: 90%;
+}
+.c-form__input {
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Noto Serif JP', sans-serif;
+    border: solid 1px #333;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.c-form__input:focus-visible {
+	outline: #4A6545 auto 1px;
+}
+.c-form__required {
+	color: #fff;
+	background-color: #4A6545;
+	border-radius: 4px;
+	padding: 5px 5px;
+	margin: 0 0 0 18px;
+}
+textarea.c-form__input {
+	height: 160px;
+}
+.c-form__submit {
+	text-align: center;
+}
+.c-form__submit button {
+	font-size: 14px;
+	color: #fff;
+    font-family: 'YDWaosagi';
+	background-color: #4A6545;
+	border: solid 1px #4A6545;
+	border-radius:20px;
+	padding: 10px 100px;
+	transition: 0.4s;
+	cursor: pointer;
+    margin-bottom: 120px;
+}
+.c-form__submit button:hover {
+	color: #4A6545;
+	background-color: transparent;
+}
+
+/*　worksのセクション　*/
+
+
+.works_top h1{
+    font-size:32px;
+    font-family: 'YDWaosagi';
+    text-align: right;
+    margin: 60px 35px 45px 0;
+
+}
+
+.works_top h2{
+    font-size:24px;
+    text-align: right;
+    margin-right: 35px;
+
+}
+
+
+.works{
+    margin-top:  -400px;
+}
+
+.works_contents{
+    text-align: left;
+    padding: 60px 30px;
+
+}
+
+.works_title {
+    writing-mode: vertical-rl;
+    font-size: 100px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
+    padding-left: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    height: 420px;
+    z-index: 9999;
+
+}
+
+.works_contents h3{
+    font-size: 24px;
+    line-height: 42px;
+    margin: 10px 0;
+}
+
+.works_contents p{
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 90px;
+}
+
+
+.slider_work {
+    width: 100%;
+  }
+
+
+  
+
+/*　aboutのセクション　*/
+
+
+.about_top h1{
+    font-size:32px;
+    font-family: 'YDWaosagi';
+    text-align: right;
+    margin: 60px 35px 45px 0;
+
+}
+
+.about_top h2{
+    font-size:24px;
+    text-align: right;
+margin-right: 35px;
+}
+
+.about_img{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+
+.about{
+    margin-top: -100px;
+}
+
+.introduction{
+    text-align: left;
+    padding: 60px 30px;
+}
+
+.introduction p{
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+
+.introduction h3{
+    font-size: 24px;
+    line-height: 42px;
+
+
+}
+
+
+.about_contents{
+    text-align: left;
+
+}
+
+.about_title {
+    writing-mode: vertical-rl;
+    font-size: 100px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
+ padding-left: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    height: 150px;
+    z-index: 9999;
+}
+
+
+.about_main {
+    font-size: 24px;
+    line-height: 42px;
+    padding: 60px 30px;
+
+}
+
+
+.about_contents p{
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    padding: 20px 30px;
+
+}
+
+/* span {
+    background: linear-gradient(transparent 50%, #FDD17B 50%);
+} */
+
+
+.about_num{
+    font-size: 24px;
+    font-family: 'YDWaosagi';
+    padding: 30px;
+}
+
+.about_tit{
+ font-size: 24px;
+ padding: 10px 30px;
+
+}
+
+
+.about_gallery{
+    margin-bottom: 200px;
+}
+
+.slider_gallery{
+    margin-bottom: 200px;
+
+}
+
+.slick-next {
+    right: 5px;
+}
+
+.slick-prev {
+    left: 5px;
+    z-index: 999;
+}
+
+/*　thanksページのセクション　*/
+
+
+.contact{
+    margin-top: 30px;
+}
+
+.contact_contents{
+    text-align: left;
+    padding: 0 10%;
+
+}
+
+.contact_title {
+    writing-mode: vertical-rl;
+    font-size: 100px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
+    padding-left: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    height: 10px;
+}
+
+.contact_tit{
+font-size: 24px;
+line-height: 48px;
+text-align: center;
+padding: 20px 0;
+}
+
+.contact_contents h3{
+    font-size: 14px;
+    text-align: center;
+margin: 20px 0;
+}
+
+
+.contact_contents p{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+
+
+.hamburger,
+.header_nav-sp{
+    display: none;
+}
+
+.hamburger2,
+.header_nav-sp2{
+    display: none;
+}
+
+
+.nav_tex{
+    display: none;
+   
+}
+
+
+@media screen and (max-width: 1100px) {
+.copy {
+    display: none;
+}
+
+
+.hamburger,
+.header_nav-sp{
+    display: none;
+}
+
+.hamburger2,
+.header_nav-sp2{
+    display: none;
+}
+
+.nav_tex{
+    display: none;
+   
+}
+
+
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .header_contents {
+        display: none;
+    }
+    
+    .main_contents{
+        width: 100%;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+    .top_img{
+        width: 100%;
+     }
+    
+
+    .main_text{
+        font-size: 9vw;
+        font-family: 'YDWaosagi';
+        color: #fff;
+        /* line-height: 100px; */
+        letter-spacing: 1px;
+        /* margin: -500px 20px 0 20px; */
+    
+     }
+    
+    .main_text2{
+        font-size: 4.5vw;
+        font-family: 'YDWaosagi';
+        color: #fff;
+        /* line-height: 40px; */
+        /* margin: 100px 0 0 20px; */
+    }
+    
+    
+    .main_contents{
+        background-color: #fff;
+        width: 100%;
+    }
+    
+    .message_contents{
+        text-align: center;
+    
+    }
+    
+    .message_contents p{
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+
+
+    }
+    
+    .more{
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    
+    .message img{
+        width: 25px;
+        object-fit: cover;
+        
+    }
+    
+    .service{
+        margin-top: -150px;
+    }
+    
+    .service_contents{
+        text-align: left;
+    
+    }
+    
+    .service_title {
+        writing-mode: vertical-rl;
+        font-size: 80px;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 100;
+        padding-left: 40px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10px;
+        height: 320px;
+    }
+    
+    .service_num{
+        font-size: 18px;
+        font-family: 'YDWaosagi';
+    padding-bottom: 40px;
+    }
+    
+    .service_tit{
+        font-size: 18px;
+    padding-bottom: 20px;
+    }
+    
+    .service_text{
+        font-size: 14px;
+        line-height: 248x;
+        padding-bottom: 20px;
+    
+    
+    }
+    
+    
+    .service_contents img{
+    margin-bottom: 80px;
+    }
+
+
+
+    
+    .footer{
+        text-align: left;
+        padding: 0 30px;
+    
+    }
+    
+    .footer_title{
+        font-size: 18px;
+        font-family: 'YDWaosagi';
+    
+    }
+    
+    .footer_text{
+        font-size: 14px;
+        line-height: 28px;
+        padding-bottom: 40px;
+    
+    }
+
+    .works_title {
+        writing-mode: vertical-rl;
+        font-size: 80px;
+        font-family: "Noto Sans JP", sans-serif;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 150px;
+        /* z-index: 9999; */
+    
+    }
+
+    .about_title {
+        writing-mode: vertical-rl;
+        font-size: 80px;
+        font-family: "Noto Sans JP", sans-serif;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 150px;
+        /* z-index: 9999; */
+    
+    }
+
+
+    .contact_title {
+        writing-mode: vertical-rl;
+        font-size: 80px;
+        font-family: "Noto Sans JP", sans-serif;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1;
+        /* z-index: 9999; */
+    
+    }
+
+
+    
+
+
+    .hamburger{
+        display: block;
+        width: 30px;
+        /* height: 30px;  */
+        position: absolute;
+        margin: 10px 0 20px 20px;
+        top: 10px;
+        /* right: 70px; */
+        cursor: pointer;
+        z-index: 9999;
+      }
+      .hamburger span{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        content: "";
+        top: 13px;
+        transition: .3s;
+      }
+    /* hamメニュー（擬似要素） */
+    .hamburger span::before{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        content: "";
+        top: -13px;
+        transition: .3s;
+    
+      }
+      .hamburger span::after{
+        width: 30px;
+        height: 2px;
+        background-color: #fff;;
+        position: absolute;
+        content: "";
+        bottom: -13px;
+        transition: .3s;
+    
+      }
+
+
+    
+    .open span{
+        background: transparent;
+    }
+    
+    .open span::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after{
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+    
+    
+    /* hamメニューが押されてnavが開いた時のCSS */
+    
+    .header_nav-sp{
+        position: absolute;
+        width: 370px;
+        height: 100vh;
+        margin: 0 auto;
+        background-color:#F3E9DC;
+        z-index: 9999;
+    
+    }
+    
+    .header_nav-sp ul{
+        display: flex;
+        flex-direction: column;
+         justify-content: start;
+        align-items: left;
+        gap: 20px;
+        height: 100%;
+        margin-left: 20px;
+    }
+    
+    .header_nav-sp li{
+        color: #4A6545;
+       font-weight: bold;
+       font-size: 24px;
+       line-height: 48px;
+       border-bottom: 2px solid #4A6545;
+  display: inline-block;
+    }
+    
+    .hamburger2{
+        display: block;
+        /* height: 30px;  */
+        position: absolute;
+        margin: 10px 0 20px 20px;
+        top: 10px;
+        /* right: 70px; */
+        cursor: pointer;
+        z-index: 9999;
+      }
+
+
+      .hamburger2 span{
+        width: 30px;
+        height: 2px;
+        background-color: #4A6545;
+        position: absolute;
+        content: "";
+        top: 13px;
+        transition: .3s;
+      }
+    /* hamメニュー（擬似要素） */
+    .hamburger2 span::before{
+        width: 30px;
+        height: 2px;
+        background-color: #4A6545;
+        position: absolute;
+        content: "";
+        top: -13px;
+        transition: .3s;
+    
+      }
+      .hamburger2 span::after{
+        width: 30px;
+        height: 2px;
+        background-color: #4A6545;;
+        position: absolute;
+        content: "";
+        bottom: -13px;
+        transition: .3s;
+    
+      }
+
+
+    
+    .open span{
+        background: transparent;
+    }
+    
+    .open span::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after{
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+
+
+
+
+
+.nav_text{
+    font-size: 24px;
+    line-height: 40px;
+    color: #4A6545;
+    font-family: 'YDWaosagi';
+    margin: 60px 20px;
+
+
+    
+}
+    
+    
+    
+    
+    
+    }
+
+    @media screen and (max-width: 370px) {
+
+        .hamburger{
+            display: block;
+            width: 30px;
+            /* height: 30px;  */
+            position: absolute;
+            /* margin: 10px 0 20px 20px; */
+            top: 10px;
+            right: 35px;
+            cursor: pointer;
+            z-index: 9999;
+          }
+
+
+          .main_text{
+            margin: -450px 0 0 20px;
+          }
+          
+
+          .main_text .text-anime{
+            display: flex;
+            overflow: hidden;
+            font-size: 50px;
+            font-family: 'YDWaosagi';
+            color: #fff;
+            line-height: 80px;
+            letter-spacing: 1px;
+          }
+          
+    
+
+    }
+
+    .kiritori{
+      position: relative;
+    }
+    .scissors{
+      position: absolute;
+      top: -4px;
+      left: 0;
+      width: 64px;
+      animation: moveScissors 3s ease-in-out infinite; /* アニメーションを適用 */
+    }
+    @keyframes moveScissors {
+      from {
+        left: 0; /* 左側の初期位置 */
+      }
+      to {
+        left: calc(100% - 64px); /* 右端まで動かす */
+      }
+    }
